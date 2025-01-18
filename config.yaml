@@ -30,9 +30,9 @@ markup:
     startLevel: 2
 params:
   comments: utterances
-  custom_theme: ''
-  customheadingFontFamily: Fraunces
-  customtextFontFamily: Commissioner
+  custom_theme: 
+  customheadingFontFamily: 	Commissioner
+  customtextFontFamily: 	Atkinson Hyperlegible
   description: A modern, beautiful, and easily configurable blog theme for Hugo.
   favicon: /img/favicon.ico
   giscus:
@@ -68,7 +68,7 @@ params:
       icon_pack: fab
       url: https://x.com/_togbonna
     - icon: orcid
-      icon_pack: ai
+      icon_pack: fab
       url: http://orcid.org/0000-0002-8082-1890
   socialInFooter: yes
   socialInHeader: no
@@ -94,10 +94,6 @@ menu:
       title: Contact form
       url: /contact/
       weight: 2
-    - name: Contributors
-      title: Contributors
-      url: /contributors/
-      weight: 3
   header:
     - name: About
       title: About Blogophonic
