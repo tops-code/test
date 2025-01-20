@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Worldcup on Toochukwu&#39;s space</title>
+    <link>//localhost:4321/tags/worldcup/</link>
+    <description>Recent content in Worldcup on Toochukwu&#39;s space</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:4321/tags/worldcup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>world cup stats</title>
+      <link>//localhost:4321/collection/2025-01-20-world-cup-stats/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/collection/2025-01-20-world-cup-stats/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

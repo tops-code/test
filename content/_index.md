@@ -3,13 +3,13 @@ action_label: Read More &rarr;
 action_link: /about
 action_type: text
 description: Exploring the intricacies of data and using data visualization as a medium for storytelling.
-image_left: true
+image_left: True
 images:
-- img/revoir.jpg
+- img/hi.png
 show_action_link: true
 show_social_links: true
 subtitle: 
-text_align_left: false
+text_align_left: True
 title: Toochukwu Ogbonna
 type: home
 ---

@@ -23,31 +23,24 @@
       <description></description>
     </item>
     <item>
-      <title>Theme Features</title>
-      <link>//localhost:4321/categories/theme-features/</link>
-      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/categories/theme-features/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evergreen</title>
-      <link>//localhost:4321/categories/evergreen/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/categories/evergreen/</guid>
+      <title>Package</title>
+      <link>//localhost:4321/categories/package/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/categories/package/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
       <link>//localhost:4321/categories/r/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       <guid>//localhost:4321/categories/r/</guid>
       <description></description>
     </item>
     <item>
-      <title>Package</title>
-      <link>//localhost:4321/categories/package/</link>
+      <title>Theme Features</title>
+      <link>//localhost:4321/categories/theme-features/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/categories/package/</guid>
+      <guid>//localhost:4321/categories/theme-features/</guid>
       <description></description>
     </item>
   </channel>

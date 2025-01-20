@@ -6,5 +6,7 @@ slug: []
 categories: []
 tags: []
 weight: 1
+excerpt: testing  hingvs is cool
+featured: true
 ---
 test test test test test test 

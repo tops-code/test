@@ -46,7 +46,7 @@ params:
     repo_id: '[REPO ID]='
     theme: light
   headingFontFamily: sans-serif
-  logo: /img/blogophonic-mark-dark.png
+  logo: /img/logo1.png
   mainSections:
     - blog
     - project
@@ -69,7 +69,7 @@ params:
       url: https://x.com/_togbonna
     - icon: orcid
       icon_pack: fab
-      url: http://orcid.org/0000-0002-8082-1890
+      url: https://orcid.org/0009-0001-8475-4242
   socialInFooter: yes
   socialInHeader: no
   textFontFamily: sans-serif
@@ -107,8 +107,8 @@ menu:
       title: Project Portfolio
       url: /project/
       weight: 3
-    - name: A collection
-      title: A collection
+    - name: Visualization Gallery
+      title: Visualization Gallery
       url: /collection/
       weight: 4
 privacy:

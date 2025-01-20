@@ -6,11 +6,11 @@ categories:
 - package
 date: "2019-07-02"
 draft: false
-excerpt: Grid is the very first CSS module created specifically to solve the layout
+excerpt: stop  is the very first CSS module created specifically to solve the layout
   problems we’ve all been hacking our way around for as long as we’ve been making
   websites.
 featured: true
-layout: single-sidebar
+layout: single
 links:
 - icon: door-open
   icon_pack: fas
