@@ -1,12 +1,12 @@
 ---
+title: "About"
+description: |
+show_header: true
+sidebar_left: true
+# Keep this! Do not edit.
+headless: false
 cascade:
   headless: true
-description: |
-  A website template for Hugo developed by RStudio & Formspree and available for free.
-headless: false
-show_header: true
-sidebar_left: True
-title: About
 ---
 
 ** index doesn't contain a body, just front matter above.

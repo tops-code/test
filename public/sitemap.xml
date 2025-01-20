@@ -5,16 +5,34 @@
     <loc>//localhost:4321/blog/football-series/2025-01-18-argentinas-unsung-hero/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:4321/categories/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/collection/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/football/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/categories/football/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/collection/2025-01-20-world-cup-stats/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/worldcup/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:4321/blog/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/categories/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:4321/series/football/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/categories/football/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/blog/football-series/</loc>
@@ -27,12 +45,6 @@
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/soccer/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/tags/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/package/</loc>
@@ -61,10 +73,6 @@
   </url><url>
     <loc>//localhost:4321/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/about/</loc>
-  </url><url>
-    <loc>//localhost:4321/collection/</loc>
   </url><url>
     <loc>//localhost:4321/license/</loc>
   </url>
