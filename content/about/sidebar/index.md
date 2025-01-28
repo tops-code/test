@@ -1,7 +1,7 @@
 ---
 ## Configure sidebar content in narrow column
 author: "Toochukwu Ogbonna"
-role: "Medical doctor & Data cientist"
+role: "Medical doctor & Data scientist"
 avatar_shape:  # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
 audio_link_label: # leave blank to exclude

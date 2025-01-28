@@ -1,0 +1,590 @@
+---
+title: Argentina's Unsung Hero
+author: Toochukwu Ogbonna
+date: '2025-01-26'
+slug: []
+categories:
+  - football
+tags:
+  - football
+  - worldcup
+excerpt: A look into the role of Rodrigo De Paul in Argentina's triumph at the 2022 world cup in Qatar
+---
+
+```{r load packages, echo=FALSE, fig.align='center', cache=FALSE}
+pacman::p_load(
+  StatsBombR, #statsbomb data
+  tidyverse, #data manipulation
+  ggsoccer, #football pitch
+  ggthemes, #extra ggplot themes
+  showtext, #to utilise google fonts and other fonts
+  ggtext, #extra text processing
+  grid,
+  ggrepel, # more text functions
+  gghighlight, #for annnotations
+  patchwork, #for plotting graphs together
+  ggforce, # for annotaions
+  igraph, 
+  qgraph,
+  gt,
+  gtExtras
+)
+
+```
+
+```{r Google fonts, message=FALSE, warning=FALSE, include=FALSE}
+font.add.google("Smooch Sans", "PI")
+font.add.google('Roboto Mono', 'roboto')
+showtext_auto()
+
+```
+
+------------------------------------------------------------------------
+
+**When** you think of Argentina's World Cup victory, a couple of things come to mind: Messi's crowning moment, that Martinez save against Kolo Muani, Enzo Fernandez's break into the world consciousness, Di Maria scoring in yet another final, Scaloni's burst to the global scene and if you're being a bit cynical, the five penalties Argentina had. Irrespective of what you think, there is a consensus that it was one of the most memorable World Cup tournaments, and it had one of the greatest football matches ever let alone a World Cup final culmination in what can only be regarded as the crowning moment in Messi's illustrious career. What might not immediately come to mind, though, is the contribution of Rodrigo de Paul in that Argentina victory. Let's explore the contributions of Argentina's Unsung hero - Rodrigo De Paul
+
+> <p style="font-style: italic";> "He was beautiful. He was the point of difference. He has always been the point of difference. Unparalleled, and maybe today, there will, of course, always be those who argue, always be those who debate. And the debate could rage on if you like. But as he falls in love with the object in the world that his heart most desired, it is hard to escape the supposition that he has rendered himself today, the greatest of all time"</p>
+
+> --- Peter Drury
+
+**Availability**
+
+We first consider his availability before exploring what made him especially important in the 20202 World Cup run. While injuries are common in any sport, and no player is immune or exempt from injury, every manager prays they can always field their best eleven in a seven-game competition. Rodrigo de Paul avails himself of this wish. He Started all seven games, completed three, and played a combined total of minutes. He was fourth in minutes played among Argentines behind Lionel Messi, Emi Martinez and Otamendi.
+
+> "Availability is the best ability."
+>
+> --- Charles Barkley
+
+```{r define key functions, message=FALSE, warning=FALSE, include=FALSE}
+
+##set custom theme
+theme_custom <- function (base_size = 15, base_family = "PI") {
+    half_line <- base_size/2
+  theme(
+    line = element_blank(),
+    rect = element_rect(fill = "#ffffff", color = NA,
+                        linewidth = NA, linetype = 1),
+    text = element_text(family = base_family, face = "plain",
+                        color = "black", size = base_size,
+                        lineheight = .9, hjust = .5, vjust = .5,
+                        angle = 0, margin = margin(), debug = FALSE),
+    axis.line = element_blank(),
+    axis.line.x = NULL,
+    axis.line.y = NULL,
+    axis.text = element_text(size = base_size * 1.1, color = "gray30"),
+    axis.text.x = element_text(margin = margin(t = .8 * half_line/2),
+                               vjust = 1),
+    axis.text.x.top = element_text(margin = margin(b = .8 * half_line/2),
+                                   vjust = 0),
+    axis.text.y = element_text(margin = margin(r = .8 * half_line/2),
+                               hjust = 1),
+    axis.text.y.right = element_text(margin = margin(l = .8 * half_line/2),
+                                     hjust = 0),
+    axis.ticks = element_line(color = "gray30", linewidth = .7),
+    axis.ticks.length = unit(half_line / 1.5, "pt"),
+    axis.ticks.length.x = NULL,
+    axis.ticks.length.x.top = NULL,
+    axis.ticks.length.x.bottom = NULL,
+    axis.ticks.length.y = NULL,
+    axis.ticks.length.y.left = NULL,
+    axis.ticks.length.y.right = NULL,
+    axis.title.x = element_blank(),
+    axis.title.x.top = element_text(margin = margin(b = half_line),
+                                    vjust = 0),
+    axis.title.y = element_blank(),
+    axis.title.y.right = element_text(angle = -90, vjust = 0,
+                                      margin = margin(l = half_line)),
+    legend.background = element_rect(color = NA),
+    legend.spacing = unit(.4, "cm"),
+    legend.spacing.x = NULL,
+    legend.spacing.y = NULL,
+    legend.margin = margin(.2, .2, .2, .2, "cm"),
+    legend.key = element_rect(fill = "gray95", color = "white"),
+    legend.key.size = unit(1.2, "lines"),
+    legend.key.height = NULL,
+    legend.key.width = NULL,
+    legend.text = element_text(size = rel(.8)),
+    legend.text.align = NULL,
+    legend.title = element_text(hjust = 0),
+    legend.title.align = NULL,
+    legend.position = "right",
+    legend.direction = NULL,
+    legend.justification = "center",
+    legend.box = NULL,
+    legend.box.margin = margin(0, 0, 0, 0, "cm"),
+    legend.box.background = element_blank(),
+    legend.box.spacing = unit(.4, "cm"),
+    panel.background = element_rect(fill = NA, color = NA),
+    panel.border = element_rect(color = NULL,
+                                fill = NA, linewidth = NULL),
+    panel.grid.major = element_line(color = "gray90", linewidth = 1),
+    panel.grid.minor = element_line(color = "gray90", linewidth = .5,
+                                    linetype = "dashed"),
+    panel.spacing = unit(base_size, "pt"),
+    panel.spacing.x = NULL,
+    panel.spacing.y = NULL,
+    panel.ontop = FALSE,
+    strip.background = element_rect(fill = "white", color = "gray30"),
+    strip.text = element_text(color = "black", size = base_size),
+    strip.text.x = element_text(margin = margin(t = half_line,
+                                                b = half_line)),
+    strip.text.y = element_text(angle = -90,
+                                margin = margin(l = half_line,
+                                                r = half_line)),
+    strip.text.y.left = element_text(angle = 90),
+    strip.placement = "inside",
+    strip.placement.x = NULL,
+    strip.placement.y = NULL,
+    strip.switch.pad.grid = unit(0.1, "cm"),
+    strip.switch.pad.wrap = unit(0.1, "cm"),
+    plot.background = element_rect(color = NA),
+    plot.title = element_text(size = base_size * 1.8, hjust = 0,
+                              vjust = 1, face = "bold",
+                              margin = margin(b = half_line/2)),
+    plot.title.position = "plot",
+    plot.subtitle = element_text(size = base_size * 1.3,
+                                 hjust = 0, vjust = 1,
+                                 margin = margin(b = half_line /2)),
+    plot.caption = element_text(size = rel(0.9), hjust = 1, vjust = 1,
+                                margin = margin(t = half_line * .9)),
+    plot.caption.position = "plot",
+    plot.tag = element_text(size = rel(1.2), hjust = .5, vjust = .5),
+    plot.tag.position = "topleft",
+    plot.margin = margin(20, 30, 20, 30),
+    complete = TRUE
+  )
+}
+
+##custom colors
+colors<-c('#87CEEB', '#0D3B66', '#254441', '#DB504A', '#F5F4EF')
+
+##function to get world cup data for any year
+
+get_worldcup_data<-function(wc_year){
+  
+  world_cup<-FreeCompetitions()|>filter(competition_id==43 & season_name==wc_year)
+  
+  ##get the events data from the worldcup
+  wc_events<-free_allevents(MatchesDF = FreeMatches(world_cup), Parallel = T)
+  
+  #cleaned wc 2022 data -- clean event data
+  wc_clean<-allclean(wc_events)
+}
+
+#function to get total mins played
+get_total_minutes_played<-function(wc_data){
+  ev<-formatelapsedtime(wc_22)
+
+#function to get the minutes played
+  mins_played<-get.minutesplayed(ev)
+
+#summarize the total minutes played per player id
+  total<-mins_played|>
+    select(player.id, MinutesPlayed)|>
+    group_by(player.id)|>
+    summarise(min_played = sum(MinutesPlayed))
+  
+  return<-list(total, mins_played)
+}
+
+
+#cleaned wc 2022 data 
+wc_22<-get_worldcup_data('2022')
+
+total_mins_played<-as.data.frame(get_total_minutes_played(wc_data = wc_22)[1])
+mins_played<-as.data.frame(get_total_minutes_played(wc_data = wc_22)[2])
+
+```
+
+```{r plot of minutes played, echo=FALSE, fig.align="left", fig.showtext=TRUE, message=FALSE, warning=FALSE}
+##get the  most minutes played
+top_20<-total_mins_played|>arrange(desc(min_played))|>slice_head(n=20)
+
+#get the player names
+top_10_names<-top_20|>
+  left_join(wc_22|>
+              select(player.id, player.name, team.name)|>
+              distinct(player.id, player.name, team.name),join_by(player.id == player.id))
+
+showtext.auto()
+##
+#set the theme to the custom theme
+theme_set(theme_custom())
+
+plot <-top_10_names|>
+  ggplot(aes(x=reorder(player.name, -min_played), y=min_played, 
+             fill  = team.name, label = player.name)) + 
+  geom_col(width = 0.8) + 
+  scale_fill_manual(values = c("#87CEEB",
+                                            "grey", 
+                                            "grey",
+                                            "grey")) + 
+  guides(fill = 'none') +
+  labs(y = 'Minutes Played', x=NULL, 
+       title = 'Most Minutes Played at the World Cup 2022', 
+       subtitle = 'RDP ranked 14 out of minutes played at the worldcup and was 4th among <span style = "color:#87CEEB;">Argentines</span>') +
+  theme(axis.text.x = element_blank(), 
+        plot.subtitle = element_markdown(size = 14), 
+        panel.border = element_blank()) 
+
+plot
+```
+
+When he was substituted against the Dutch Argentina were already a goal up and were 3 goals up and when he was substitute against the Croats.
+
+```{r plot-of-matches-played, echo=FALSE, fig.align="left", fig.showtext=TRUE, warning=FALSE}
+
+###get match starts
+rdp<-mins_played|>filter(player.id == 7797)
+
+##the matches Argentina played
+matches_played<-wc_22|>distinct(match_id, team.name) |> 
+  group_by(match_id)|>mutate(no = row_number())|>
+  ungroup()|>
+  pivot_wider(names_from = no, values_from = team.name)|>
+  filter(`1` == 'Argentina' | `2` == 'Argentina')
+
+#rdp matches
+rdp_starts<-rdp|>
+  left_join(matches_played, join_by(match_id))|>arrange(match_id)
+
+
+#convert the times to numeric
+rdp_starts_converted<-rdp_starts|>mutate(TimeOn = as.numeric(str_replace(TimeOn, ":", '.')), 
+                                         
+                                         TimeOff = as.numeric(str_replace(TimeOff, ":", '.')), 
+                                         
+                                         MinutesPlayed = as.numeric(str_replace(MinutesPlayed, ":", '.')),
+                                         
+                                         oponent = case_when( str_detect(`1`,'Arg') ~ `2`, .default = `1`)
+                                         )
+                                         
+rdp_starts_converted$oponent<-factor(rdp_starts_converted$oponent, levels =c("Saudi Arabia", "Mexico", "Poland", "Australia", "Netherlands", "Croatia", "France"))
+##plot dumbbell plot with his minutes
+rdp_starts_converted|>
+  ggplot() + 
+  geom_linerange(aes(xmin=TimeOn,  xmax=GameEnd, y = fct_rev(oponent)),color = colors[1], size = 2) +
+  geom_linerange(aes(xmin=TimeOn,  xmax=TimeOff, y = fct_rev(oponent)),color = colors[2], size = 1) + 
+  geom_point(aes(x = GameEnd, y = oponent), color = colors[1], size = 2.5, shape = 22, fill = colors[1]) +
+  geom_point(data = rdp_starts_converted[5:7, ], aes(x = TimeOff, y = oponent), color = colors[2], size = 3, shape = 25, fill = '#DB504A') +
+  labs(y = NULL, x=NULL, 
+       title = "RDP's World cup starts", 
+       subtitle = "Rodrigo De Paul started in all of Argentina's games at the world cup 
+       completing<br> <span style = 'color:#87CEEB;'>4</span> and being subsitiuted in <span style = 'color:#DB504A;'>3</span> ") +
+  theme(plot.subtitle = element_textbox_simple(size = 14)) 
+
+```
+
+**Centrality**
+
+Graphs and networks are a good way to measure the influence of elements in a system, so we'll explore just how important RDP was to the Argentina team. Before going into the finer details, we can see from the pass map how central Enzo was to the way the team was set up, both literally and figuratively; he made the teamwork, but we could argue that the RDP's role was just as important if not more; he made Messi work. The gameplan seems simple enough, Molina to RDP to Messi, showing just how dependent Argentina was on that right-hand side; the fact that both Taglafico and Acuna, who are both left-backs, were among the players with the most minutes and di Maria, who plays on the left side for doesn't crack the top 10 outfield Argentina with the most minutes shows just how reliant they were on the right side.
+
+```{r generating-passmap, fig.align = "left", warning=FALSE, echo=FALSE, dpi = 300, fig.height=11, fig.width=12, fig.cap='passmap'}
+#get Argentina data for successful passes -- passes with a recipient -- not throw-ins
+
+##function to get passes made and to and from a countries players
+#returns 2 data frames - first is data frame containing
+get_country_pass_perfomance<-function(country_name, worldcup_df, total_minutes){
+  
+  arg<-worldcup_df |>
+  
+  #get successful passes for Argentina
+  filter(team.name == str_to_title(country_name) & type.name == 'Pass' & !is.na(pass.recipient.name)) |>
+  
+  #filter throw-ins
+  filter(is.na(pass.type.name) | pass.type.name != 'Throw-in') |>
+  
+  #select required columns
+  select(location, 
+         player.name, 
+         position.name, 
+         pass.end_location, 
+         pass.recipient.name, 
+         player.id) |>
+  #get the actual locations
+  mutate(
+    location = str_remove(location, 'c'), 
+    location = str_remove(location, '\\('), 
+    location = str_remove(location, '\\)'), 
+    pass.end_location = str_remove(pass.end_location, 'c'), 
+    pass.end_location = str_remove(pass.end_location, '\\('), 
+    pass.end_location = str_remove(pass.end_location, '\\)')
+    
+  )
+  #scratch variables to store the coordinates
+  arg$x = NA
+  arg$y = NA
+  arg$endx = NA
+  arg$endy = NA
+
+#split the location into x and y coordinates and store in scratch variables
+  for (i in 1 : nrow(arg)){
+    arg[i, 'x'] = str_split_fixed(arg[i, "location"], ',', n = 2)[1, 1]
+    arg[i, 'y'] = str_split_fixed(arg[i, "location"], ',', n = 2)[1, 2]
+    arg[i, 'endx'] = str_split_fixed(arg[i, "pass.end_location"], ',', n = 2)[1, 1]
+    arg[i, 'endy'] = str_split_fixed(arg[i, "pass.end_location"], ',', n = 2)[1, 2]
+  }
+  
+  arg$x = as.numeric(arg$x)
+  arg$y = as.numeric(arg$y)
+  arg$endx = as.numeric(arg$endx)
+  arg$endy = as.numeric(arg$endy)
+  
+  arg<-arg|>select(-c(pass.end_location, position.name, location))
+
+  #split into passes made and those received. 
+args_pass<-arg|>
+  select(player.name, x, y, player.id)
+args_rec<-arg|>
+  select(pass.recipient.name,  endx, endy ,player.id) |>
+  rename(player.name = pass.recipient.name, x=endx, y=endy)
+
+#combine them
+comb<-rbind(args_pass, args_rec)
+
+#combine them
+comb<-rbind(args_pass, args_rec)
+
+#find the average position for passes made and passes received by each player
+#also sum up the number of passes received and given to get the size of the node
+comb<-comb|>
+  group_by(player.name)|>
+  
+  #get the average position for passes given and received
+  mutate(no.passes = n(), av.x = mean(x), av.y = mean(y))|>
+  mutate(get = row_number()) |>
+  filter(get == 1)|>
+  ungroup()|>
+  
+  #join to minutes played
+  inner_join(total_minutes, join_by(player.id)) |>
+  arrange(desc(min_played))|>
+  mutate(num = row_number()) |>
+  
+  #get the top 11 minutes played
+  filter(num<=11)|>
+  
+  #select necessary columns
+  select(player.name, av.x, av.y, no.passes, player.id)
+
+return(list(arg, comb))
+}
+
+argentina_passes<-get_country_pass_perfomance('argentina', wc_22, total_mins_played)
+
+#get the total number of passes players with the most minutes made and received and their average position of passes given and received
+comb<-as.data.frame(argentina_passes[2])
+
+#get data frame containing who players passed to, the location of the pass and the location of the recipient
+arg<-as.data.frame(argentina_passes[1])
+
+
+##find out how many passes were made between players
+pass_combinations_argentina<-arg|>
+  select(player.name, pass.recipient.name) |>
+
+  #groups those who have made passes to each other
+  
+  group_by(player.name, pass.recipient.name)|>
+  
+  # count the number  of passes between players with n()
+  # use row number to get each group - n is the same across the data frame for the same
+  #passer and recipient combination: the  number varies from 1 till n
+  mutate(n = n(), number = row_number()) |>
+  
+  ungroup()|>
+  
+  #get one of the combinations
+  filter(number == 1) |>
+    
+  select(-number)
+
+
+##get passes mades by those with most minutes
+
+top_11_players<-pass_combinations_argentina |>
+  #join with data frame containing players with the most minutes to get average location of pass givers 
+  
+  inner_join(comb, join_by(player.name)) |>
+  
+  select(-no.passes)|>
+
+  rename(x = av.x,  y=av.y) |>
+
+  #join with data frame containing players with the most minutes to get average     location of pass receivers
+  inner_join(comb, join_by(pass.recipient.name == player.name))|>
+  
+  select(-no.passes)
+
+comb<-comb|>mutate(popular_names = c('Otamendi', 'Messi', 'Dibu', 'De Paul', 'Enzo', 'Molina', 'Romero', 'Mac Allister', ' Álvarez', 'Tagliafico', 'Acuña'))
+
+pass_top_eleven<-top_11_players|>
+  mutate(two_player_id = as.character(player.id.x + player.id.y))|>
+  group_by(two_player_id)|>mutate(total = sum(n))|>
+  mutate(get=row_number())|>
+  filter(get == 1)
+
+
+ggplot()  + 
+  
+  #
+  annotate_pitch(dimensions = pitch_statsbomb) +
+  
+  
+  #
+  geom_segment(data = pass_top_eleven, 
+               mapping = aes(x = x, y= 80 - y, xend = av.x, 
+                             yend =80 - av.y,linewidth = total
+                             ), 
+             color = colors[4]) +
+  
+  #
+  geom_point(comb, mapping = aes(x= av.x, y = 80 - (av.y), size = no.passes), 
+             color = 'black') +
+  
+  #
+  scale_size_continuous(range = c(4, 10)) +
+  
+  #
+  geom_text_repel(data = comb|>
+                    filter(popular_names %in% 
+                             c('Otamendi', 'Messi', 'Dibu', 'De Paul', 'Molina', 'Romero', 'Mac Allister', ' Álvarez', 'Tagliafico', 'Acuña')), 
+                  aes(x= av.x, 80 - (av.y), label = popular_names), 
+                  size = 20, nudge_x = 7, direction = 'y') +
+  
+  #
+  geom_mark_circle(comb|>filter(popular_names %in% c("Enzo")) ,
+                 mapping=aes(x= av.x, y = 80 - (av.y),
+        label = "Enzo the Conductor",
+        description = 'The map shows just how central Enzo was to the argentina national team both in recieving and distriubting the ball', alpha = 0.01),
+    expand = unit(10, "mm"), con.cap = unit(0, "mm"),
+    label.width = unit(100, 'mm'), label.buffer = unit(70, "mm"),
+    label.fontsize = c(40, 30),
+    label.colour = "grey20",
+    label.lineheight = 0.4,
+    label.fill = "gray90", 
+    label.family = 'roboto') +
+  
+  #
+  geom_mark_hull(comb|>filter(popular_names %in% c("Messi", "De Paul", "Molina")) ,
+                 mapping=aes(x= av.x, y = 80 - (av.y),
+        label = "Lobsided right",
+        description = 'RDP and Messi had the joint highest number of passes between them at 167, with RDP passing to Messi 106 times, the most from a player to another in the Argentina squad. The other pair of players that share this are Molina and RDP further emphassiing the importnace of the right side in the Argentine squad', alpha = 0.01),
+    expand = unit(4, "mm"), con.cap = unit(0, "mm"),
+    label.width = unit(100, 'mm'), label.buffer = unit(2, "mm"),
+    label.lineheight = 0.4, 
+    label.fontsize = c(40, 30),
+    label.colour = "grey20",
+    label.fill = "gray90", 
+    label.family = 'roboto') +
+  
+  labs(title = "Argentina's Passmap at the 2022 Worldcup", 
+       subtitle = "Showing the passes made between the eleven players with the most minutes") +
+  
+  theme(axis.text = element_blank(),
+        plot.title = element_text(size = 80),
+        plot.subtitle = element_textbox_simple(size = 60),
+        legend.position = 'none') 
+
+```
+
+Using the graph networks show essentially the same thing as the pass map shows. What we can, however, do with the maps is that we can quantify just how important he was to the team as a whole
+
+```{r network-map, echo=FALSE, fig.align="left", fig.cap='Argentina Network Plot', fig.height=8, fig.width=10, warning=FALSE, dpi=150}
+
+#among players with the squad
+pass_combinations<-pass_combinations_argentina|>
+  
+  #pivot the datat wider to get matrix type data
+  pivot_wider(names_from = pass.recipient.name, values_from = n, values_fill = 0)
+
+#get column names - to be used to order datat appropiately
+label<-c('De Paul', 'Molina', 'Romero','Otamendi', 'Enzo',
+  'Acuña','Mac Allister','Messi',
+   'Álvarez','Di María','Emiliano', 'Tagliafico',
+  'Paredes','Pezzella','Lautaro', 'Almada',
+  'Montiel', 'Martínez', 'Guido','Palacios',
+  'Gómez', 'Dybala', 'Foyth', 'Correa')
+
+names<-pass_combinations$player.name
+
+#arrange the table based on player names
+orderd_df<-pass_combinations[, c('player.name', names)]
+
+#covert orderd df into a matrix
+matrix_obj_1<-as.matrix(orderd_df[1:24, 2:25])
+
+#get the degree for each node
+#convert first to an igrpah object
+i_obj<-igraph::graph_from_adjacency_matrix(matrix_obj_1)
+#get the degrees
+deg<-igraph::degree(i_obj, mode = 'all')
+
+#plot the network
+net<-qgraph(matrix_obj_1,
+       layout = 'spring',
+       theme = 'colorblind',
+       edge.color = colors[2],
+       label.color = 'black', 
+       labels=label,
+       vsize = deg/150,
+       label.scale = F
+       )
+title('Argentina Network')
+
+
+
+#rec<-pass_combinations_argentina|>group_by(pass.recipient.name)|>summarise(total = sum(n))|>ungroup()
+#given<-pass_combinations_argentina|>group_by(player.name)|>summarise(total = sum(n))
+#total<-given|>inner_join(rec, join_by(player.name == pass.recepient.name))
+
+```
+
+The network graph shows what we have already seen on the pass map. The node size corresponds to the number of passes given and received, and the thickness of the lines represents the number of passes given. This gives us a clearer picture of the player's influence.
+
+First, we examine some descriptive measures of network systems and then consider the player's influence on the system. 
+1. Degree centrality is the most straightforward and intuitive measure of centrality; it simply depends on the number of edges each node has. In the context of football and this data, it merely shows how many passes a player has received. Since we have passes made and passes received, measuring the IN (passes received) and OUT (passes given) Degrees is possible. The combination of both is just called the Degree. The Degree is equivalent to the player's size, which is already represented in the pass map and the graph above. 
+
+2. Betweenness Centrality measures how important nodes or players are to the flow of a network; a node or player with high Betweenness facilitates the movement of information or the ball in football. By calculating the shortest path between nodes, we can get betweenness centrality. The Betweenness of players in a game can demonstrate how a team plays; if the team prioritises passing it from the back and playing through the middle, we can expect its defenders and midfielders to have higher measures of Betweenness.
+
+3. Closeness centrality indicates how close a node is to another node in the network. It shows how close players are to each other in terms of receiving passes from other players.  
+
+4. We measure the influence of the players in the network using the page rank and eigen centrality algorithms, while they are similar -  the PageRank is based on the eigen- they are still different. Eigen depends on the number of connections a node has, and the number of connections each node it connect to also has iot rewards for nodes that have connections to highly connected nodes. Page rank differs from the Eigen in that it also accounts for the indegrees of the node, which the eigenvector does not.
+  
+```{r centrality, echo=FALSE, warning=FALSE}
+out<-centrality(net)$OutDegree
+in_deg<-centrality(net)$InDegree
+closeness<-centrality(net)$Closeness
+between<-centrality(net)$Betweenness
+pg_rank<-page_rank(i_obj)$vector
+eigenrank<-authority.score(i_obj)$vector
+
+
+des_stats<-cbind.data.frame(out, in_deg, round(closeness, 3), between, round(pg_rank, 3), round(eigenrank, 3))
+des_stats<-rownames_to_column(des_stats)
+colnames(des_stats)<-c('Player name',"OutDegrees","InDegrees","Closeness", "Betweenness", 'PageRank', 'Eigenvector')
+
+maxscores<-c(max(des_stats$OutDegrees), max(des_stats$InDegrees), max(des_stats$Closeness), max(des_stats$Betweenness), max(des_stats$PageRank), max(des_stats$Eigenvector))
+
+gt(des_stats)|>
+  tab_header(
+    title = 'Network Descriptive Stats'
+  ) |>
+  tab_style_body(
+    column = where(is.numeric),
+    style = list(
+      cell_fill(color = colors[4]),
+      cell_text(color = 'white')
+    ) , 
+    values = maxscores
+  ) |> 
+  
+  tab_footnote(
+    footnote = html('<span style = "color:##254441;"> Highest values </span>')
+  )|>
+  
+  gt_theme_538()
+```
+he summary shows first how Argentina played. The tram prioritized playing from the back, demonstrated by Otamendi's high betweenness and out-degree scores. It also depended a lot on cent5ra play; this is shown by the fact that the players with the highest between scores are midfielders and, of course, Lionel Messi. When checking the important CEO fat players with the page rank algorithm, we see that Messi ranks highest, but RDP ranks highest when using the eigenvector centrality. However, this shows how the algorithms evaluate the importance of elements in a network. Despite the difference, Messi is second in the EigENVECTOR WHILE RDP IS SECOND USING PageRank; again, strengthening the team's right side was where the magic happened. 
+
+In cinclusion, we see just how importnat Rdp was to the aringintsa vitcorty
