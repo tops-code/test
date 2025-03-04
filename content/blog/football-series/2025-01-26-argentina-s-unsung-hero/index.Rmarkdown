@@ -277,7 +277,7 @@ rdp_starts_converted|>
 
 **Centrality**
 
-Graphs and networks are a good way to measure the influence of elements in a system, so we'll explore just how important RDP was to the Argentina team. Before going into the finer details, we can see from the pass map how central Enzo was to the way the team was set up, both literally and figuratively; he made the teamwork, but we could argue that the RDP's role was just as important if not more; he made Messi work. The gameplan seems simple enough, Molina to RDP to Messi, showing just how dependent Argentina was on that right-hand side; the fact that both Taglafico and Acuna, who are both left-backs, were among the players with the most minutes and di Maria, who plays on the left side for doesn't crack the top 10 outfield Argentina with the most minutes shows just how reliant they were on the right side.
+Graphs and networks are a good way to measure the influence of elements in a system, so we'll explore just how important RDP was to this Argentine team. Before going into the finer details, we can see from the pass map how central Enzo was to the way the team was set up, both literally and figuratively; he made the teamwork, but we could argue that the RDP's role was just as important if not more; he made Messi work. The gameplan seems simple enough, Molina to RDP to Messi, showing just how dependent Argentina was on that right-hand side; the fact that both Taglafico and Acuna, who are both left-backs, were among the top 10 outfield Argentine players with the most minutes and Di Maria, who also plays on the left side, isn't among the  shows just how reliant they were on the right side.
 
 ```{r generating-passmap, fig.align = "left", warning=FALSE, echo=FALSE, dpi = 300, fig.height=11, fig.width=12, fig.cap='passmap'}
 #get Argentina data for successful passes -- passes with a recipient -- not throw-ins
@@ -540,9 +540,9 @@ title('Argentina Network')
 
 ```
 
-The network graph shows what we have already seen on the pass map. The node size corresponds to the number of passes given and received, and the thickness of the lines represents the number of passes given. This gives us a clearer picture of the player's influence.
+The node size corresponds to the number of passes given and received, and the thickness of the lines represents the number of passes given. This gives us a clearer picture of the player's influence.
 
-First, we examine some descriptive measures of network systems and then consider the player's influence on the system. 
+First, we examine some descriptive measures of network systems and then consider the player's influence on the system in terms of the measures. 
 1. Degree centrality is the most straightforward and intuitive measure of centrality; it simply depends on the number of edges each node has. In the context of football and this data, it merely shows how many passes a player has received. Since we have passes made and passes received, measuring the IN (passes received) and OUT (passes given) Degrees is possible. The combination of both is just called the Degree. The Degree is equivalent to the player's size, which is already represented in the pass map and the graph above. 
 
 2. Betweenness Centrality measures how important nodes or players are to the flow of a network; a node or player with high Betweenness facilitates the movement of information or the ball in football. By calculating the shortest path between nodes, we can get betweenness centrality. The Betweenness of players in a game can demonstrate how a team plays; if the team prioritises passing it from the back and playing through the middle, we can expect its defenders and midfielders to have higher measures of Betweenness.

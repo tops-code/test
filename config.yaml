@@ -50,7 +50,8 @@ params:
   mainSections:
     - blog
     - project
-    - talk
+    - collection
+    - about
   math:
     renderer: katex
   navallcaps: yes
@@ -63,7 +64,7 @@ params:
       url: https://github.com/tops-code
     - icon: instagram
       icon_pack: fab
-      url: https://www.instagram.com/explore/tags/apero/
+      url: https://www.instagram.com/toochukwu__/profilecard/?igsh=MTd5aXE5bXh2dGpzMA==
     - icon: x-twitter
       icon_pack: fab
       url: https://x.com/_togbonna

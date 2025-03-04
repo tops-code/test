@@ -109,13 +109,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   blockquote {
-    @extend .ml0, .pl3, .bl, .bw2, .measure-wide, .b--#{$borderColor} ;
+    @extend .ml0, .pl3, .bl, .bw2, .w-100, .b--#{$borderColor} ;
 
     p, cite { @extend .lh-copy ; }
     cite { @extend .f6, .i ; }
   }
 
-  ul:not(.panel-tabs), ol, dl { @extend .measure-wide, .lh-copy ; }
+  ul:not(.panel-tabs), ol, dl { @extend .w-100, .lh-copy ; }
   > dl dt { @extend .pl3, .b, .mb2 ; }
 
   hr { @extend .mv4, .ba, .b--#{$borderColor} ; }

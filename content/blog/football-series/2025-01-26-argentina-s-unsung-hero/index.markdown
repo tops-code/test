@@ -35,7 +35,7 @@ When he was substituted against the Dutch Argentina were already a goal up and w
 
 **Centrality**
 
-Graphs and networks are a good way to measure the influence of elements in a system, so we’ll explore just how important RDP was to the Argentina team. Before going into the finer details, we can see from the pass map how central Enzo was to the way the team was set up, both literally and figuratively; he made the teamwork, but we could argue that the RDP’s role was just as important if not more; he made Messi work. The gameplan seems simple enough, Molina to RDP to Messi, showing just how dependent Argentina was on that right-hand side; the fact that both Taglafico and Acuna, who are both left-backs, were among the players with the most minutes and di Maria, who plays on the left side for doesn’t crack the top 10 outfield Argentina with the most minutes shows just how reliant they were on the right side.
+Graphs and networks are a good way to measure the influence of elements in a system, so we’ll explore just how important RDP was to this Argentine team. Before going into the finer details, we can see from the pass map how central Enzo was to the way the team was set up, both literally and figuratively; he made the teamwork, but we could argue that the RDP’s role was just as important if not more; he made Messi work. The gameplan seems simple enough, Molina to RDP to Messi, showing just how dependent Argentina was on that right-hand side; the fact that both Taglafico and Acuna, who are both left-backs, were among the top 10 outfield Argentine players with the most minutes and Di Maria, who also plays on the left side, isn’t among the shows just how reliant they were on the right side.
 
 <div class="figure" style="text-align: left">
 
@@ -57,9 +57,9 @@ Using the graph networks show essentially the same thing as the pass map shows. 
 
 </div>
 
-The network graph shows what we have already seen on the pass map. The node size corresponds to the number of passes given and received, and the thickness of the lines represents the number of passes given. This gives us a clearer picture of the player’s influence.
+The node size corresponds to the number of passes given and received, and the thickness of the lines represents the number of passes given. This gives us a clearer picture of the player’s influence.
 
-First, we examine some descriptive measures of network systems and then consider the player’s influence on the system.
+First, we examine some descriptive measures of network systems and then consider the player’s influence on the system in terms of the measures.
 1. Degree centrality is the most straightforward and intuitive measure of centrality; it simply depends on the number of edges each node has. In the context of football and this data, it merely shows how many passes a player has received. Since we have passes made and passes received, measuring the IN (passes received) and OUT (passes given) Degrees is possible. The combination of both is just called the Degree. The Degree is equivalent to the player’s size, which is already represented in the pass map and the graph above.
 
 2.  Betweenness Centrality measures how important nodes or players are to the flow of a network; a node or player with high Betweenness facilitates the movement of information or the ball in football. By calculating the shortest path between nodes, we can get betweenness centrality. The Betweenness of players in a game can demonstrate how a team plays; if the team prioritises passing it from the back and playing through the middle, we can expect its defenders and midfielders to have higher measures of Betweenness.
@@ -68,24 +68,24 @@ First, we examine some descriptive measures of network systems and then consider
 
 4.  We measure the influence of the players in the network using the page rank and eigen centrality algorithms, while they are similar - the PageRank is based on the eigen- they are still different. Eigen depends on the number of connections a node has, and the number of connections each node it connect to also has iot rewards for nodes that have connections to highly connected nodes. Page rank differs from the Eigen in that it also accounts for the indegrees of the node, which the eigenvector does not.
 
-<div id="heullxzepb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mrisbqpjyz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#heullxzepb table {
+#mrisbqpjyz table {
   font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-&#10;#heullxzepb thead, #heullxzepb tbody, #heullxzepb tfoot, #heullxzepb tr, #heullxzepb td, #heullxzepb th {
+&#10;#mrisbqpjyz thead, #mrisbqpjyz tbody, #mrisbqpjyz tfoot, #mrisbqpjyz tr, #mrisbqpjyz td, #mrisbqpjyz th {
   border-style: none;
 }
-&#10;#heullxzepb p {
+&#10;#mrisbqpjyz p {
   margin: 0;
   padding: 0;
 }
-&#10;#heullxzepb .gt_table {
+&#10;#mrisbqpjyz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -110,11 +110,11 @@ First, we examine some descriptive measures of network systems and then consider
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_caption {
+&#10;#mrisbqpjyz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#heullxzepb .gt_title {
+&#10;#mrisbqpjyz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -125,7 +125,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#heullxzepb .gt_subtitle {
+&#10;#mrisbqpjyz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -136,7 +136,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#heullxzepb .gt_heading {
+&#10;#mrisbqpjyz .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -147,12 +147,12 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_bottom_border {
+&#10;#mrisbqpjyz .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_col_headings {
+&#10;#mrisbqpjyz .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -166,7 +166,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_col_heading {
+&#10;#mrisbqpjyz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -185,7 +185,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#heullxzepb .gt_column_spanner_outer {
+&#10;#mrisbqpjyz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -196,13 +196,13 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#heullxzepb .gt_column_spanner_outer:first-child {
+&#10;#mrisbqpjyz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#heullxzepb .gt_column_spanner_outer:last-child {
+&#10;#mrisbqpjyz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#heullxzepb .gt_column_spanner {
+&#10;#mrisbqpjyz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -213,10 +213,10 @@ First, we examine some descriptive measures of network systems and then consider
   display: inline-block;
   width: 100%;
 }
-&#10;#heullxzepb .gt_spanner_row {
+&#10;#mrisbqpjyz .gt_spanner_row {
   border-bottom-style: hidden;
 }
-&#10;#heullxzepb .gt_group_heading {
+&#10;#mrisbqpjyz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -241,7 +241,7 @@ First, we examine some descriptive measures of network systems and then consider
   vertical-align: middle;
   text-align: left;
 }
-&#10;#heullxzepb .gt_empty_group_heading {
+&#10;#mrisbqpjyz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -255,13 +255,13 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-color: #FFFFFF;
   vertical-align: middle;
 }
-&#10;#heullxzepb .gt_from_md > :first-child {
+&#10;#mrisbqpjyz .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#heullxzepb .gt_from_md > :last-child {
+&#10;#mrisbqpjyz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#heullxzepb .gt_row {
+&#10;#mrisbqpjyz .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -279,7 +279,7 @@ First, we examine some descriptive measures of network systems and then consider
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#heullxzepb .gt_stub {
+&#10;#mrisbqpjyz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -291,7 +291,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#heullxzepb .gt_stub_row_group {
+&#10;#mrisbqpjyz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -304,13 +304,13 @@ First, we examine some descriptive measures of network systems and then consider
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#heullxzepb .gt_row_group_first td {
+&#10;#mrisbqpjyz .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#heullxzepb .gt_row_group_first th {
+&#10;#mrisbqpjyz .gt_row_group_first th {
   border-top-width: 2px;
 }
-&#10;#heullxzepb .gt_summary_row {
+&#10;#mrisbqpjyz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -319,14 +319,14 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#heullxzepb .gt_first_summary_row {
+&#10;#mrisbqpjyz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_first_summary_row.thick {
+&#10;#mrisbqpjyz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#heullxzepb .gt_last_summary_row {
+&#10;#mrisbqpjyz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -335,7 +335,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_grand_summary_row {
+&#10;#mrisbqpjyz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -344,7 +344,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#heullxzepb .gt_first_grand_summary_row {
+&#10;#mrisbqpjyz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -353,7 +353,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_last_grand_summary_row_top {
+&#10;#mrisbqpjyz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -362,10 +362,10 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 6px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_striped {
+&#10;#mrisbqpjyz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#heullxzepb .gt_table_body {
+&#10;#mrisbqpjyz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -373,7 +373,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_footnotes {
+&#10;#mrisbqpjyz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -386,7 +386,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_footnote {
+&#10;#mrisbqpjyz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -394,7 +394,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#heullxzepb .gt_sourcenotes {
+&#10;#mrisbqpjyz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -407,64 +407,64 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#heullxzepb .gt_sourcenote {
+&#10;#mrisbqpjyz .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#heullxzepb .gt_left {
+&#10;#mrisbqpjyz .gt_left {
   text-align: left;
 }
-&#10;#heullxzepb .gt_center {
+&#10;#mrisbqpjyz .gt_center {
   text-align: center;
 }
-&#10;#heullxzepb .gt_right {
+&#10;#mrisbqpjyz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#heullxzepb .gt_font_normal {
+&#10;#mrisbqpjyz .gt_font_normal {
   font-weight: normal;
 }
-&#10;#heullxzepb .gt_font_bold {
+&#10;#mrisbqpjyz .gt_font_bold {
   font-weight: bold;
 }
-&#10;#heullxzepb .gt_font_italic {
+&#10;#mrisbqpjyz .gt_font_italic {
   font-style: italic;
 }
-&#10;#heullxzepb .gt_super {
+&#10;#mrisbqpjyz .gt_super {
   font-size: 65%;
 }
-&#10;#heullxzepb .gt_footnote_marks {
+&#10;#mrisbqpjyz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
-&#10;#heullxzepb .gt_asterisk {
+&#10;#mrisbqpjyz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#heullxzepb .gt_indent_1 {
+&#10;#mrisbqpjyz .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#heullxzepb .gt_indent_2 {
+&#10;#mrisbqpjyz .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#heullxzepb .gt_indent_3 {
+&#10;#mrisbqpjyz .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#heullxzepb .gt_indent_4 {
+&#10;#mrisbqpjyz .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#heullxzepb .gt_indent_5 {
+&#10;#mrisbqpjyz .gt_indent_5 {
   text-indent: 25px;
 }
-&#10;#heullxzepb .katex-display {
+&#10;#mrisbqpjyz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
-&#10;#heullxzepb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+&#10;#mrisbqpjyz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 &#10;tbody tr:last-child {
