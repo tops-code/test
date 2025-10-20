@@ -1,5 +1,5 @@
 ---
-author: Eric Anderson
+author: Toochukwu Ogbonna
 categories:
 - Theme Features
 - R

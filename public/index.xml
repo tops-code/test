@@ -6,8 +6,15 @@
     <description>Recent content in Toochukwu Ogbonna on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Health Data Webapp</title>
+      <link>//localhost:4321/project/health-data/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/health-data/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;shiny.png&#34; alt=&#34;shiny and quarto logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thsi was my first shiny app. i was not going to originally use shint. i thin iwa nted to use flexxdashboard, but decided to use shiny along the way. It most combineds shiny and quarto. i think the nect one i build witll be fully shiny. it is still shiny, but equal parts quarto. i still use bslib i got the data from the nhs wales site and from stats.goec.uk.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Argentina&#39;s Unsung Hero</title>
       <link>//localhost:4321/blog/football-series/2025-01-26-argentina-s-unsung-hero/</link>
@@ -55,7 +62,7 @@
       <link>//localhost:4321/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:4321/license/</guid>
-      <description>&lt;p&gt;My &#xA;&lt;a href=&#34;//localhost:4321/post/&#34;&gt;blog posts&lt;/a&gt; are released under a &#xA;&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;i class=&#34;fab fa-creative-commons fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-by fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-sa fa-2x&#34;&gt;&lt;/i&gt;&#xA;&lt;/center&gt;</description>
+      <description>&lt;p&gt;My &#xA;&lt;a href=&#34;//localhost:4321/blog/&#34;&gt;blog posts&lt;/a&gt; are released under a &#xA;&lt;a href=&#34;http://creativecommons.org/licenses/by-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;center&gt;&#xD;&#xA;&lt;i class=&#34;fab fa-creative-commons fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-by fa-2x&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-creative-commons-sa fa-2x&#34;&gt;&lt;/i&gt;&#xD;&#xA;&lt;/center&gt;</description>
     </item>
   </channel>
 </rss>

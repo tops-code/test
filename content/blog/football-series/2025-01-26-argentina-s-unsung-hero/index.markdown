@@ -41,6 +41,7 @@ Graphs and networks are a good way to measure the influence of elements in a sys
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/generating-passmap-1.png" alt="passmap" width="3600" />
 <p class="caption">
+
 <span id="fig:generating-passmap"></span>Figure 1: passmap
 </p>
 
@@ -52,6 +53,7 @@ Using the graph networks show essentially the same thing as the pass map shows. 
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/network-map-1.png" alt="Argentina Network Plot" width="1500" />
 <p class="caption">
+
 <span id="fig:network-map"></span>Figure 2: Argentina Network Plot
 </p>
 
@@ -68,24 +70,24 @@ First, we examine some descriptive measures of network systems and then consider
 
 4.  We measure the influence of the players in the network using the page rank and eigen centrality algorithms, while they are similar - the PageRank is based on the eigen- they are still different. Eigen depends on the number of connections a node has, and the number of connections each node it connect to also has iot rewards for nodes that have connections to highly connected nodes. Page rank differs from the Eigen in that it also accounts for the indegrees of the node, which the eigenvector does not.
 
-<div id="mrisbqpjyz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ccrjavgnrr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#mrisbqpjyz table {
+#ccrjavgnrr table {
   font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-&#10;#mrisbqpjyz thead, #mrisbqpjyz tbody, #mrisbqpjyz tfoot, #mrisbqpjyz tr, #mrisbqpjyz td, #mrisbqpjyz th {
+&#10;#ccrjavgnrr thead, #ccrjavgnrr tbody, #ccrjavgnrr tfoot, #ccrjavgnrr tr, #ccrjavgnrr td, #ccrjavgnrr th {
   border-style: none;
 }
-&#10;#mrisbqpjyz p {
+&#10;#ccrjavgnrr p {
   margin: 0;
   padding: 0;
 }
-&#10;#mrisbqpjyz .gt_table {
+&#10;#ccrjavgnrr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -110,11 +112,11 @@ First, we examine some descriptive measures of network systems and then consider
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_caption {
+&#10;#ccrjavgnrr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#mrisbqpjyz .gt_title {
+&#10;#ccrjavgnrr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -125,7 +127,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#mrisbqpjyz .gt_subtitle {
+&#10;#ccrjavgnrr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -136,7 +138,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#mrisbqpjyz .gt_heading {
+&#10;#ccrjavgnrr .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -147,12 +149,12 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_bottom_border {
+&#10;#ccrjavgnrr .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_col_headings {
+&#10;#ccrjavgnrr .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -166,7 +168,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_col_heading {
+&#10;#ccrjavgnrr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -185,7 +187,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#mrisbqpjyz .gt_column_spanner_outer {
+&#10;#ccrjavgnrr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -196,13 +198,13 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#mrisbqpjyz .gt_column_spanner_outer:first-child {
+&#10;#ccrjavgnrr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#mrisbqpjyz .gt_column_spanner_outer:last-child {
+&#10;#ccrjavgnrr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#mrisbqpjyz .gt_column_spanner {
+&#10;#ccrjavgnrr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -213,10 +215,10 @@ First, we examine some descriptive measures of network systems and then consider
   display: inline-block;
   width: 100%;
 }
-&#10;#mrisbqpjyz .gt_spanner_row {
+&#10;#ccrjavgnrr .gt_spanner_row {
   border-bottom-style: hidden;
 }
-&#10;#mrisbqpjyz .gt_group_heading {
+&#10;#ccrjavgnrr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -241,7 +243,7 @@ First, we examine some descriptive measures of network systems and then consider
   vertical-align: middle;
   text-align: left;
 }
-&#10;#mrisbqpjyz .gt_empty_group_heading {
+&#10;#ccrjavgnrr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -255,13 +257,13 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-color: #FFFFFF;
   vertical-align: middle;
 }
-&#10;#mrisbqpjyz .gt_from_md > :first-child {
+&#10;#ccrjavgnrr .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#mrisbqpjyz .gt_from_md > :last-child {
+&#10;#ccrjavgnrr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#mrisbqpjyz .gt_row {
+&#10;#ccrjavgnrr .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -279,7 +281,7 @@ First, we examine some descriptive measures of network systems and then consider
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#mrisbqpjyz .gt_stub {
+&#10;#ccrjavgnrr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -291,7 +293,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#mrisbqpjyz .gt_stub_row_group {
+&#10;#ccrjavgnrr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -304,13 +306,13 @@ First, we examine some descriptive measures of network systems and then consider
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#mrisbqpjyz .gt_row_group_first td {
+&#10;#ccrjavgnrr .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#mrisbqpjyz .gt_row_group_first th {
+&#10;#ccrjavgnrr .gt_row_group_first th {
   border-top-width: 2px;
 }
-&#10;#mrisbqpjyz .gt_summary_row {
+&#10;#ccrjavgnrr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -319,14 +321,14 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#mrisbqpjyz .gt_first_summary_row {
+&#10;#ccrjavgnrr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_first_summary_row.thick {
+&#10;#ccrjavgnrr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#mrisbqpjyz .gt_last_summary_row {
+&#10;#ccrjavgnrr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -335,7 +337,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_grand_summary_row {
+&#10;#ccrjavgnrr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -344,7 +346,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#mrisbqpjyz .gt_first_grand_summary_row {
+&#10;#ccrjavgnrr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -353,7 +355,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_last_grand_summary_row_top {
+&#10;#ccrjavgnrr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -362,10 +364,10 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 6px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_striped {
+&#10;#ccrjavgnrr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#mrisbqpjyz .gt_table_body {
+&#10;#ccrjavgnrr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -373,7 +375,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_footnotes {
+&#10;#ccrjavgnrr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -386,7 +388,7 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_footnote {
+&#10;#ccrjavgnrr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -394,7 +396,7 @@ First, we examine some descriptive measures of network systems and then consider
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#mrisbqpjyz .gt_sourcenotes {
+&#10;#ccrjavgnrr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -407,64 +409,64 @@ First, we examine some descriptive measures of network systems and then consider
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#mrisbqpjyz .gt_sourcenote {
+&#10;#ccrjavgnrr .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#mrisbqpjyz .gt_left {
+&#10;#ccrjavgnrr .gt_left {
   text-align: left;
 }
-&#10;#mrisbqpjyz .gt_center {
+&#10;#ccrjavgnrr .gt_center {
   text-align: center;
 }
-&#10;#mrisbqpjyz .gt_right {
+&#10;#ccrjavgnrr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#mrisbqpjyz .gt_font_normal {
+&#10;#ccrjavgnrr .gt_font_normal {
   font-weight: normal;
 }
-&#10;#mrisbqpjyz .gt_font_bold {
+&#10;#ccrjavgnrr .gt_font_bold {
   font-weight: bold;
 }
-&#10;#mrisbqpjyz .gt_font_italic {
+&#10;#ccrjavgnrr .gt_font_italic {
   font-style: italic;
 }
-&#10;#mrisbqpjyz .gt_super {
+&#10;#ccrjavgnrr .gt_super {
   font-size: 65%;
 }
-&#10;#mrisbqpjyz .gt_footnote_marks {
+&#10;#ccrjavgnrr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
-&#10;#mrisbqpjyz .gt_asterisk {
+&#10;#ccrjavgnrr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#mrisbqpjyz .gt_indent_1 {
+&#10;#ccrjavgnrr .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#mrisbqpjyz .gt_indent_2 {
+&#10;#ccrjavgnrr .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#mrisbqpjyz .gt_indent_3 {
+&#10;#ccrjavgnrr .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#mrisbqpjyz .gt_indent_4 {
+&#10;#ccrjavgnrr .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#mrisbqpjyz .gt_indent_5 {
+&#10;#ccrjavgnrr .gt_indent_5 {
   text-indent: 25px;
 }
-&#10;#mrisbqpjyz .katex-display {
+&#10;#ccrjavgnrr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
-&#10;#mrisbqpjyz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+&#10;#ccrjavgnrr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 &#10;tbody tr:last-child {
@@ -664,6 +666,6 @@ First, we examine some descriptive measures of network systems and then consider
 </table>
 </div>
 
-he summary shows first how Argentina played. The tram prioritized playing from the back, demonstrated by Otamendi’s high betweenness and out-degree scores. It also depended a lot on cent5ra play; this is shown by the fact that the players with the highest between scores are midfielders and, of course, Lionel Messi. When checking the important CEO fat players with the page rank algorithm, we see that Messi ranks highest, but RDP ranks highest when using the eigenvector centrality. However, this shows how the algorithms evaluate the importance of elements in a network. Despite the difference, Messi is second in the EigENVECTOR WHILE RDP IS SECOND USING PageRank; again, strengthening the team’s right side was where the magic happened.
+The summary shows first how Argentina played. This is a team that favored patient buildup up from the back, this helps explains Otamendi’s high betweenness and out-degree scores. It also depended a lot on advancing the ball through central spaces, this is reflected by the fact that the players with the highest between scores are midfielders and, of course, Lionel Messi and they had few if any true out and out wingers capable of hugging the touchline and producing width in the wide spaces. When checking the important players firstly with the page rank algorithm, we see that Messi ranks highest, but RDP ranks highest when using the eigenvector centrality. However, this shows how the algorithms evaluate the importance of elements in a network. Despite the difference, Messi is second in the EigENVECTOR WHILE RDP IS SECOND USING Page Rank; again, strengthening the team’s right side was where the magic happened.
 
-In cinclusion, we see just how importnat Rdp was to the aringintsa vitcorty
+In conclusion, we see just how important Rdp was to Argentin’s Worlcup Triumph.
