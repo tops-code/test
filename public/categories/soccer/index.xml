@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Soccer on Toochukwu&#39;s space</title>
-    <link>//localhost:4321/categories/soccer/</link>
+    <link>/categories/soccer/</link>
     <description>Recent content in Soccer on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:4321/categories/soccer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/soccer/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
