@@ -2,31 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Toochukwu&#39;s space</title>
-    <link>/tags/</link>
+    <link>//localhost:3652/tags/</link>
     <description>Recent content in Tags on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:3652/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App</title>
+      <link>//localhost:3652/tags/app/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:3652/tags/app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nhs</title>
+      <link>//localhost:3652/tags/nhs/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:3652/tags/nhs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>//localhost:3652/tags/r/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:3652/tags/r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shiny</title>
+      <link>//localhost:3652/tags/shiny/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:3652/tags/shiny/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Football</title>
-      <link>/tags/football/</link>
+      <link>//localhost:3652/tags/football/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/football/</guid>
+      <guid>//localhost:3652/tags/football/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo-Site</title>
-      <link>/tags/hugo-site/</link>
+      <link>//localhost:3652/tags/hugo-site/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/hugo-site/</guid>
+      <guid>//localhost:3652/tags/hugo-site/</guid>
       <description></description>
     </item>
     <item>
       <title>Worldcup</title>
-      <link>/tags/worldcup/</link>
+      <link>//localhost:3652/tags/worldcup/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/worldcup/</guid>
+      <guid>//localhost:3652/tags/worldcup/</guid>
       <description></description>
     </item>
   </channel>

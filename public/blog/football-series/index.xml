@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Football Hub on Toochukwu&#39;s space</title>
-    <link>/blog/football-series/</link>
+    <link>//localhost:3652/blog/football-series/</link>
     <description>Recent content in Football Hub on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/blog/football-series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:3652/blog/football-series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Argentina&#39;s Unsung Hero</title>
-      <link>/blog/football-series/2025-01-26-argentina-s-unsung-hero/</link>
+      <link>//localhost:3652/blog/football-series/2025-01-26-argentina-s-unsung-hero/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/blog/football-series/2025-01-26-argentina-s-unsung-hero/</guid>
+      <guid>//localhost:3652/blog/football-series/2025-01-26-argentina-s-unsung-hero/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;When&lt;/strong&gt; you think of Argentina’s World Cup victory, a couple of things come to mind: Messi’s crowning moment, that Martinez save against Kolo Muani, Enzo Fernandez’s break into the world consciousness, Di Maria scoring in yet another final, Scaloni’s burst to the global scene and if you’re being a bit cynical, the five penalties Argentina had. Irrespective of what you think, there is a consensus that it was one of the most memorable World Cup tournaments, and it had one of the greatest football matches ever let alone a World Cup final culmination in what can only be regarded as the crowning moment in Messi’s illustrious career. What might not immediately come to mind, though, is the contribution of Rodrigo de Paul in that Argentina victory. Let’s explore the contributions of Argentina’s Unsung hero - Rodrigo De Paul&lt;/p&gt;</description>
     </item>
   </channel>

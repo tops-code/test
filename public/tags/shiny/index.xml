@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shiny on Toochukwu&#39;s space</title>
-    <link>//localhost:4321/tags/shiny/</link>
+    <link>//localhost:3652/tags/shiny/</link>
     <description>Recent content in Shiny on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:4321/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:3652/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health Data Webapp</title>
-      <link>//localhost:4321/project/health-data/</link>
+      <link>//localhost:3652/project/health-data/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/project/health-data/</guid>
+      <guid>//localhost:3652/project/health-data/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;shiny.png&#34; alt=&#34;shiny and quarto logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thsi was my first shiny app. i was not going to originally use shint. i thin iwa nted to use flexxdashboard, but decided to use shiny along the way. It most combineds shiny and quarto. i think the nect one i build witll be fully shiny. it is still shiny, but equal parts quarto. i still use bslib i got the data from the nhs wales site and from stats.goec.uk.&lt;/p&gt;</description>
     </item>
   </channel>
