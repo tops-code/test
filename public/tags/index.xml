@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Toochukwu&#39;s space</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App</title>
+      <link>//localhost:4321/tags/app/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/tags/app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nhs</title>
+      <link>//localhost:4321/tags/nhs/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/tags/nhs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>//localhost:4321/tags/r/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/tags/r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shiny</title>
+      <link>//localhost:4321/tags/shiny/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/tags/shiny/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Football</title>
       <link>//localhost:4321/tags/football/</link>

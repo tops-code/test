@@ -2,13 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:4321/blog/</loc>
-    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/blog/football-series/2025-01-26-argentina-s-unsung-hero/</loc>
-    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <loc>//localhost:4321/tags/app/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/categories/health-data/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/project/health-data/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/nhs/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/project/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/r/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/categories/r/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/shiny/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/categories/shiny/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/tags/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/blog/football-series/2025-01-26-argentina-s-unsung-hero/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/tags/football/</loc>
@@ -32,10 +62,7 @@
     <loc>//localhost:4321/categories/soccer/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/tags/</loc>
-    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/</loc>
+    <loc>//localhost:4321/blog/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/tags/worldcup/</loc>
@@ -48,12 +75,6 @@
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/package/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/project/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/categories/r/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/project/giraffes/</loc>
